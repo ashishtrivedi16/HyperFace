@@ -6,6 +6,8 @@ TODO :
     - Selective search
     - Iterative region proposal (IRP)
     - Landmark based - Non Maximum Suppression (L-NMS)
+    - Train RCNN on imagenet, then use the network weights to train on region proposals from AFLW dataset
+    - Copy weights to the hyperface model and retrain it on AFLW dataset
 
 - Experimental stuff
     - Find better loss functions/ Implement custom loss functions
