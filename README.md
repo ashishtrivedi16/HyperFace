@@ -2,17 +2,21 @@
 Contains the implementation of [HyperFace: A deep multi task learning framework for facial recognition, landmark detection, pose and gender detection](https://arxiv.org/pdf/1603.01249.pdf)
 
 TODO :
-- Implement following
+- Implement HyperFace-AlexNet
     - Selective search
     - Iterative region proposal (IRP)
     - Landmark based - Non Maximum Suppression (L-NMS)
-    - Train RCNN on imagenet, then use the network weights to train on region proposals from AFLW dataset
+    - skip training RCNN on imagenet and directly train on region proposals from AFLW dataset
     - Copy weights to the hyperface model and retrain it on AFLW dataset
+
+- Implement HyperFace-ResNet101
+    - Uses keras.application to load model weights and retrain R-CNN
+    - Re-write the model architecture for resnet and carry out training
 
 - Experimental stuff
     - Find better loss functions/ Implement custom loss functions
     - Find better optimizer
-    - Decide on using ReduceLROnPlateau or not, looks for useful callbacks
+    - Decide on using ReduceLROnPlateau or not, look for useful callbacks
 
 - Future Plans
     - Implement using ResNet
