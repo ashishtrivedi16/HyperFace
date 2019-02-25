@@ -15,7 +15,7 @@ TODO :
 
 - Experimental stuff
     - ~~Find better loss functions/ Implement custom loss functions~~
-    - ~~Find better optimizer
+    - ~~Find better optimizer~~
     - ~~Decide on using ReduceLROnPlateau or not, look for useful callbacks~~
 
 - Future Plans
