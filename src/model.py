@@ -152,10 +152,10 @@ class Models:
 
         loss_weights = {
                 "out_detection" : 1.0,
-                "out_landmarks" : 1.0,
-                "out_visibility" : 1.0,
-                "out_pose" : 1.0,
-                "out_gender" : 1.0
+                "out_landmarks" : 5.0,
+                "out_visibility" : 0.5,
+                "out_pose" : 5.0,
+                "out_gender" : 2.0
                 }
 
         optimizer = RMSprop(
